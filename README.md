@@ -1,5 +1,7 @@
 # docker-autossh
 
+This is copy of https://github.com/jnovack/docker-autossh whats adding ARM support for docker build
+
 Highly customizable AutoSSH docker container
 
 ## Overview
