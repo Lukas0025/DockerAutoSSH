@@ -25,7 +25,7 @@ echo autossh \
  -o ServerAliveCountMax=1 \
  -o "ExitOnForwardFailure yes" \
  -t -t \
- ${SSH_MODE:=-R} ${SSH_TUNNEL_REMOTE}:${SSH_TUNNEL_HOST}:${SSH_TUNNEL_LOCAL} \
+ ${SSH_MODE:=-R} 0.0.0.0:${SSH_TUNNEL_REMOTE}:${SSH_TUNNEL_HOST}:${SSH_TUNNEL_LOCAL} \
  -p ${SSH_HOSTPORT:=22} \
  ${SSH_HOSTUSER}@${SSH_HOSTNAME}
 
